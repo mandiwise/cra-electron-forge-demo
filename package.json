@@ -2,6 +2,7 @@
   "name": "cra-electron-forge-demo",
   "version": "0.1.0",
   "main": "public/electron.js",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -51,7 +52,10 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "src/icons/mac/icon.icns",
+        "name": "React + Electron App"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
